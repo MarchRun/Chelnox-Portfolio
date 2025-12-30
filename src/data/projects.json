@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "title": "Nitro Itera Racing",
+        "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum consectetur pulvinar.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum consectetur pulvinar. Curabitur pretium, mauris et tristique pellentesque, velit arcu auctor ipsum, vestibulum facilisis risus magna tincidunt arcu.",
+        "role": "Backend Developer",
+        "timeline": "January 2024 - May 2024",
+        "contributor": "Edwin Darren Hasannudin, Marchel Karuna Kwee, Michael Caren Sihombing, Muhammad Fauzan As Shabierin",
+        "image": "/images/project-1.ico",
+        "techStack": [
+            "python"
+        ],
+        "link": "https://github.com/chaelren/Nitro-Itera-Racing"
+    },
+    {
+        "id": 2,
+        "title": "Lebung Farm",
+        "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum consectetur pulvinar.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum consectetur pulvinar. Curabitur pretium, mauris et tristique pellentesque, velit arcu auctor ipsum, vestibulum facilisis risus magna tincidunt arcu.",
+        "role": "UI/UX Designer, Frontend Developer",
+        "timeline": "August 2024 - December 2024",
+        "contributor": "Ahmad Faqih Hasani, Billy, Casey Zonifer Deborah Manurung, Chikalyz Kayla Putri Maharani Mae, Giulia Puspo Negoro, Handayani, Marchel Karuna Kwee, Ramon Riping",
+        "image": "/images/project-2.png",
+        "techStack": [
+            "html5",
+            "css3",
+            "javascript",
+            "php"
+        ],
+        "link": "https://github.com/afhasani/Tubes-KSI-LebungFarm"
+    },
+    {
+        "id": 3,
+        "title": "Legenda Tiga Raja",
+        "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum consectetur pulvinar.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum consectetur pulvinar. Curabitur pretium, mauris et tristique pellentesque, velit arcu auctor ipsum, vestibulum facilisis risus magna tincidunt arcu.",
+        "role": "Game Artist",
+        "timeline": "September 2024 - December 2024",
+        "contributor": "Alma Julio Isnansyah, Ashoka Tatang Solihin, Marchel Karuna Kwee, Muhammad Narendra Budi Utomo, Pricelia Putri Zulkarnain",
+        "image": "/images/project-3.png",
+        "techStack": [
+            "godot",
+            "aseprite",
+            "adobe audition"
+        ],
+        "link": "https://ashokatatangs.itch.io/legenda-3-raja"
+    },
+    {
+        "id": 4,
+        "title": "Marc Portal",
+        "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum consectetur pulvinar.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum consectetur pulvinar. Curabitur pretium, mauris et tristique pellentesque, velit arcu auctor ipsum, vestibulum facilisis risus magna tincidunt arcu.",
+        "role": "Full-Stack Developer",
+        "timeline": "January 2025 - May 2025",
+        "contributor": "Billy, Casey Zonifer Deborah Manurung, Marchel Karuna Kwee",
+        "image": "/images/project-4.png",
+        "techStack": [
+            "typescript",
+            "react",
+            "nextjs",
+            "google cloud"
+        ],
+        "link": ""
+    },
+    {
+        "id": 5,
+        "title": "Kibang Soil Tracker",
+        "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum consectetur pulvinar.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum consectetur pulvinar. Curabitur pretium, mauris et tristique pellentesque, velit arcu auctor ipsum, vestibulum facilisis risus magna tincidunt arcu.",
+        "role": "Project Manager",
+        "timeline": "September 2025 - December 2025",
+        "contributor": "Billy, Garland Wijaya, Marchel Karuna Kwee, Muhammad Zahran Albara, Ramon Riping",
+        "image": "/images/project-5.png",
+        "techStack": [
+            "typescript",
+            "cplusplus",
+            "react",
+            "nextjs",
+            "firebase"
+        ],
+        "link": "https://pti-kibang-soil-tracker.vercel.app/"
+    },
+    {
+        "id": 6,
+        "title": "Iterary",
+        "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum consectetur pulvinar.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum consectetur pulvinar. Curabitur pretium, mauris et tristique pellentesque, velit arcu auctor ipsum, vestibulum facilisis risus magna tincidunt arcu.",
+        "role": "Cloud Engineer, Backend Developer",
+        "timeline": "November 2025 - December 2025",
+        "contributor": "Aditya Wahyu Suhendar, Dina Rahma Dita, Edwin Darren Hasannudin, Marchel Karuna Kwee, Michael Caren Sihombing, Muhammad Fauzan As Shabierin",
+        "image": "/images/project-6-v2.png",
+        "techStack": [
+            "typescript",
+            "react",
+            "google cloud",
+            "redis"
+        ],
+        "link": "https://github.com/adityasuhendar/ITERARY"
+    }
+]

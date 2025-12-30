@@ -1,0 +1,29 @@
+{
+    "frontend": [
+        "SiHtml5",
+        "SiCss3",
+        "SiTypescript",
+        "SiJavascript",
+        "SiReact",
+        "SiNextdotjs",
+        "SiTailwindcss",
+        "SiBootstrap"
+    ],
+    "backend": [
+        "SiCplusplus",
+        "SiGo",
+        "SiPython",
+        "SiKotlin",
+        "SiPhp",
+        "SiNodedotjs",
+        "SiPostgresql",
+        "SiMysql",
+        "SiFirebase",
+        "SiSupabase"
+    ],
+    "tools": [
+        "SiGit",
+        "SiDocker",
+        "SiFigma"
+    ]
+}

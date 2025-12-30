@@ -1,0 +1,16 @@
+{
+    "name": "CHELNOX Portfolio",
+    "short_name": "CHELNOX",
+    "description": "Marchel Karuna Kwee - Web Developer Portfolio",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0f172a",
+    "theme_color": "#0ea5e9",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "64x64",
+            "type": "image/x-icon"
+        }
+    ]
+}

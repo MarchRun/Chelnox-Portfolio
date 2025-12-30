@@ -55,13 +55,18 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
-          <Link
-            href="#home"
-            className={`text-2xl md:text-3xl font-black text-orange-500 dark:text-sky-400 hover:text-gray-900 dark:hover:text-white transition-all duration-500 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
-              }`}
-          >
-            CHELNOX
-          </Link>
+          <div className="flex items-center gap-2">
+            <Link
+              href="#home"
+              className={`text-2xl md:text-3xl font-black text-orange-500 dark:text-sky-400 hover:text-gray-900 dark:hover:text-white transition-all duration-500 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"
+                }`}
+            >
+              CHELNOX
+            </Link>
+            <span className={`text-xs font-semibold text-orange-400 dark:text-sky-300 transition-all duration-500 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"}`}>
+              Ver 1.2
+            </span>
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-10">

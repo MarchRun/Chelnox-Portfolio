@@ -10,7 +10,7 @@ export default function Contact() {
         message: "",
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error" | "no-backend">("idle");
+    const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
 
     const handleChange = (
         e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -24,17 +24,8 @@ export default function Contact() {
         setIsSubmitting(true);
         setSubmitStatus("idle");
 
-        // Check if API URL is configured
-        const apiUrl = process.env.NEXT_PUBLIC_API_URL;
-        if (!apiUrl) {
-            // No backend configured - show friendly message
-            setSubmitStatus("no-backend");
-            setIsSubmitting(false);
-            return;
-        }
-
         try {
-            const response = await fetch(`${apiUrl}/api/contact`, {
+            const response = await fetch("/api/contact", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -143,11 +134,6 @@ export default function Contact() {
                             {submitStatus === "error" && (
                                 <p className="text-center text-red-600 dark:text-red-400">
                                     Failed to send message. Please try again.
-                                </p>
-                            )}
-                            {submitStatus === "no-backend" && (
-                                <p className="text-center text-orange-600 dark:text-sky-400">
-                                    Contact form is not available yet. Please reach out via email directly!
                                 </p>
                             )}
                         </form>

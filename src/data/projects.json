@@ -2,76 +2,81 @@
     {
         "id": 1,
         "title": "Nitro Itera Racing",
-        "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum consectetur pulvinar.",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum consectetur pulvinar. Curabitur pretium, mauris et tristique pellentesque, velit arcu auctor ipsum, vestibulum facilisis risus magna tincidunt arcu.",
+        "shortDescription": "Game balap 2D seru yang menguji refleks dan kecepatan Anda dalam menghindari rintangan lalu lintas.",
+        "description": "Game balap mobil 2D yang dikembangkan menggunakan Python dan Pygame. Pemain ditantang untuk mengemudi dengan kecepatan tinggi di tengah lalu lintas padat, menghindari rintangan, dan mengumpulkan poin tertinggi. Proyek ini mendemonstrasikan penerapan konsep Pemrograman Berorientasi Objek (OOP) dalam pengembangan game.",
         "role": "Backend Developer",
         "timeline": "January 2024 - May 2024",
         "contributor": "Edwin Darren Hasannudin, Marchel Karuna Kwee, Michael Caren Sihombing, Muhammad Fauzan As Shabierin",
-        "image": "/images/project-1.ico",
+        "image": "/images/project_nitro_itera_racing.ico",
         "techStack": [
             "python"
         ],
-        "link": "https://github.com/chaelren/Nitro-Itera-Racing"
+        "githubUrl": "https://github.com/chaelren/Nitro-Itera-Racing",
+        "demoUrl": ""
     },
     {
         "id": 2,
         "title": "Lebung Farm",
-        "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum consectetur pulvinar.",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum consectetur pulvinar. Curabitur pretium, mauris et tristique pellentesque, velit arcu auctor ipsum, vestibulum facilisis risus magna tincidunt arcu.",
+        "shortDescription": "Website profil dan katalog produk UMKM Desa Lebung Sari untuk meningkatkan pemasaran digital.",
+        "description": "Platform web yang didedikasikan untuk UMKM Desa Lebung Sari, menampilkan katalog produk lokal unggulan seperti keripik pisang. Website ini dibangun menggunakan PHP Native dan MySQL, dilengkapi fitur manajemen konten untuk admin mengelola data produk dan informasi desa.",
         "role": "UI/UX Designer, Frontend Developer",
         "timeline": "August 2024 - December 2024",
         "contributor": "Ahmad Faqih Hasani, Billy, Casey Zonifer Deborah Manurung, Chikalyz Kayla Putri Maharani Mae, Giulia Puspo Negoro, Handayani, Marchel Karuna Kwee, Ramon Riping",
-        "image": "/images/project-2.png",
+        "image": "/images/project_lebung_farm.png",
         "techStack": [
             "html5",
             "css3",
             "javascript",
             "php"
         ],
-        "link": "https://github.com/afhasani/Tubes-KSI-LebungFarm"
+        "githubUrl": "https://github.com/afhasani/Tubes-KSI-LebungFarm",
+        "demoUrl": ""
     },
     {
         "id": 3,
         "title": "Legenda Tiga Raja",
-        "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum consectetur pulvinar.",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum consectetur pulvinar. Curabitur pretium, mauris et tristique pellentesque, velit arcu auctor ipsum, vestibulum facilisis risus magna tincidunt arcu.",
+        "shortDescription": "Game Action RPG Top-Down Pixel Art tentang petualangan pendekar Hanggar di Pulau Sumatera.",
+        "description": "Game Action RPG dengan gaya Pixel Art Top-Down yang menceritakan kisah Hanggar, seorang pendekar keturunan kuno yang harus menyelamatkan Pulau Sumatera. Pemain akan berpetualang melawan entitas jahat yang mengutuk raja-raja menjadi monster. Dikembangkan menggunakan Godot Engine, game ini menonjolkan narasi lokal dan gameplay yang menantang.",
         "role": "Game Artist",
         "timeline": "September 2024 - December 2024",
         "contributor": "Alma Julio Isnansyah, Ashoka Tatang Solihin, Marchel Karuna Kwee, Muhammad Narendra Budi Utomo, Pricelia Putri Zulkarnain",
-        "image": "/images/project-3.png",
+        "image": "/images/project_legenda_tiga_raja.png",
         "techStack": [
             "godot",
             "aseprite",
             "adobe audition"
         ],
-        "link": "https://ashokatatangs.itch.io/legenda-3-raja"
+        "githubUrl": "",
+        "demoUrl": "https://ashokatatangs.itch.io/legenda-3-raja"
     },
     {
         "id": 4,
         "title": "Marc Portal",
-        "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum consectetur pulvinar.",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum consectetur pulvinar. Curabitur pretium, mauris et tristique pellentesque, velit arcu auctor ipsum, vestibulum facilisis risus magna tincidunt arcu.",
+        "shortDescription": "Portal berita real-time dengan fitur pencarian canggih dan otentikasi aman via Google.",
+        "description": "Aplikasi berita modern yang menyajikan headline terkini dari seluruh dunia secara real-time. Dibangun dengan Next.js dan Tailwind CSS, aplikasi ini mengintegrasikan News API untuk konten dinamis dan Google OAuth untuk keamanan akses pengguna, menawarkan pengalaman membaca yang responsif dan personal.",
         "role": "Full-Stack Developer",
         "timeline": "January 2025 - May 2025",
         "contributor": "Billy, Casey Zonifer Deborah Manurung, Marchel Karuna Kwee",
-        "image": "/images/project-4.png",
+        "image": "/images/project_marc_portal.png",
         "techStack": [
             "typescript",
             "react",
             "nextjs",
+            "tailwind",
             "google cloud"
         ],
-        "link": ""
+        "githubUrl": "https://github.com/MarchRun/Website-Portal-Berita",
+        "demoUrl": ""
     },
     {
         "id": 5,
         "title": "Kibang Soil Tracker",
-        "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum consectetur pulvinar.",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum consectetur pulvinar. Curabitur pretium, mauris et tristique pellentesque, velit arcu auctor ipsum, vestibulum facilisis risus magna tincidunt arcu.",
+        "shortDescription": "Sistem monitoring kondisi tanah berbasis IoT (ESP32) dan Web (Next.js) untuk pertanian cerdas.",
+        "description": "Sistem pelacakan dan monitoring kondisi tanah (Soil Tracker) yang mengintegrasikan perangkat keras IoT (ESP32) dengan dashboard web modern. Proyek ini memantau parameter tanah secara real-time untuk mendukung pertanian presisi. Dibangun dengan TypeScript, Next.js, dan C++ (untuk mikrokontroler), serta menggunakan Firebase untuk penyimpanan data real-time.",
         "role": "Project Manager",
         "timeline": "September 2025 - December 2025",
         "contributor": "Billy, Garland Wijaya, Marchel Karuna Kwee, Muhammad Zahran Albara, Ramon Riping",
-        "image": "/images/project-5.png",
+        "image": "/images/project_kibang_soil_tracker.png",
         "techStack": [
             "typescript",
             "cplusplus",
@@ -79,23 +84,25 @@
             "nextjs",
             "firebase"
         ],
-        "link": "https://pti-kibang-soil-tracker.vercel.app/"
+        "githubUrl": "https://github.com/Zahran812/PTI-Kibang-Soil-Tracker",
+        "demoUrl": "https://pti-kibang-soil-tracker.vercel.app/"
     },
     {
         "id": 6,
         "title": "Iterary",
-        "shortDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum consectetur pulvinar.",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer elementum consectetur pulvinar. Curabitur pretium, mauris et tristique pellentesque, velit arcu auctor ipsum, vestibulum facilisis risus magna tincidunt arcu.",
+        "shortDescription": "Sistem manajemen perpustakaan digital berbasis cloud untuk modernisasi fasilitas kampus ITERA.",
+        "description": "Solusi perpustakaan digital komprehensif (Three-Tier Architecture) yang mengelola katalog dan peminjaman buku secara efisien. Dibangun dengan ekosistem modern (React, Node.js, Google Cloud Platform), aplikasi ini mendukung skalabilitas tinggi dan memudahkan akses literasi bagi civitas akademika.",
         "role": "Cloud Engineer, Backend Developer",
         "timeline": "November 2025 - December 2025",
         "contributor": "Aditya Wahyu Suhendar, Dina Rahma Dita, Edwin Darren Hasannudin, Marchel Karuna Kwee, Michael Caren Sihombing, Muhammad Fauzan As Shabierin",
-        "image": "/images/project-6-v2.png",
+        "image": "/images/project_iterary.png",
         "techStack": [
             "typescript",
             "react",
             "google cloud",
             "redis"
         ],
-        "link": "https://github.com/adityasuhendar/ITERARY"
+        "githubUrl": "https://github.com/adityasuhendar/ITERARY",
+        "demoUrl": ""
     }
 ]

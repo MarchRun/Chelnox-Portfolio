@@ -5,7 +5,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import ProjectCard from "./ProjectCard";
 import projectsData from "@/data/projects.json";
 import { useInView } from "@/hooks/useInView";
-import MegaMendungBg from "./MegaMendungBg";
+import FloatingBubbles from "./FloatingBubbles";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -35,8 +35,8 @@ export default function ProjectSlider() {
         />
       </div>
 
-      {/* Mega Mendung Particles */}
-      <MegaMendungBg />
+      {/* Floating Bubbles Particles */}
+      <FloatingBubbles />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2

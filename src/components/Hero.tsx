@@ -4,14 +4,14 @@ import { useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import {
-    FaWhatsapp,
+    FaEnvelope,
     FaFacebookF,
     FaInstagram,
     FaGithub,
     FaLinkedinIn
 } from "react-icons/fa";
 
-const MegaMendungBg = dynamic(() => import("./MegaMendungBg"), {
+const FloatingBubbles = dynamic(() => import("./FloatingBubbles"), {
     ssr: false,
 });
 
@@ -32,32 +32,32 @@ const phrases = [
 // Social links
 const socialLinks = [
     {
-        icon: FaWhatsapp,
-        href: "https://wa.me/081234567890",
-        label: "WhatsApp",
-        hoverBg: "hover:bg-[#25D366]",
+        icon: FaEnvelope,
+        href: "mailto:marchelk372@gmail.com",
+        label: "Email",
+        hoverBg: "hover:bg-[#EA4335]",
     },
     {
         icon: FaFacebookF,
-        href: "https://facebook.com",
+        href: "https://www.facebook.com/marchel.karuna/",
         label: "Facebook",
         hoverBg: "hover:bg-[#1877F2]",
     },
     {
         icon: FaInstagram,
-        href: "https://instagram.com",
+        href: "https://www.instagram.com/mar.chel_k/",
         label: "Instagram",
         hoverBg: "hover:bg-gradient-to-tr hover:from-[#F58529] hover:via-[#DD2A7B] hover:to-[#8134AF]",
     },
     {
         icon: FaGithub,
-        href: "https://github.com",
+        href: "https://github.com/MarchRun",
         label: "GitHub",
         hoverBg: "hover:bg-[#333333]",
     },
     {
         icon: FaLinkedinIn,
-        href: "https://linkedin.com",
+        href: "https://www.linkedin.com/in/marchelkarunakwee/",
         label: "LinkedIn",
         hoverBg: "hover:bg-[#0A66C2]",
     },
@@ -107,10 +107,6 @@ export default function Hero() {
         return () => clearTimeout(timeout);
     }, [displayedText, isDeleting, currentPhraseIndex]);
 
-    const handleDownloadCV = () => {
-        alert("CV is not available yet. Please check back later!");
-    };
-
     return (
         <section
             id="home"
@@ -134,8 +130,8 @@ export default function Hero() {
                 />
             </div>
 
-            {/* Mega Mendung Particles */}
-            <MegaMendungBg />
+            {/* Floating Bubbles Particles */}
+            <FloatingBubbles />
 
             {/* Hero Content */}
             <div className="relative z-10 text-center px-4 pt-16">
@@ -191,12 +187,13 @@ export default function Hero() {
                     >
                         Get Started
                     </a>
-                    <button
-                        onClick={handleDownloadCV}
+                    <a
+                        href="/Marchel_Karuna_CV.pdf"
+                        download="Marchel_Karuna_CV.pdf"
                         className="px-8 py-3 border-2 border-orange-500 dark:border-sky-400 text-orange-600 dark:text-sky-400 rounded-xl font-semibold hover:bg-gray-900 hover:border-gray-900 hover:text-white dark:hover:bg-white dark:hover:border-white dark:hover:text-gray-900 transition-all"
                     >
                         Download CV
-                    </button>
+                    </a>
                 </div>
             </div>
         </section>

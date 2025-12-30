@@ -150,9 +150,7 @@ export default function About() {
                                 Who Am I?
                             </h3>
                             <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed text-justify">
-                                I&apos;m a passionate web developer with a love for creating beautiful
-                                and functional digital experiences. My journey in tech started with
-                                curiosity and grew into a full-fledged career in web development.
+                                My name is Marchel Karuna Kwee. My journey in technology began with a deep curiosity about how software is crafted to solve real-world problems. That curiosity has since evolved into a professional dedication to Software Development. I am focused on building robust, efficient, and user-centric software solutions, with a strong passion for continuously exploring the broad spectrum of technologies within the industry.
                             </p>
                         </div>
 
@@ -174,7 +172,7 @@ export default function About() {
                                         </svg>
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold text-sm text-gray-900 dark:text-white">Web Development</h4>
+                                        <h4 className="font-semibold text-sm text-gray-900 dark:text-white">Web App Development</h4>
                                         <p className="text-xs text-gray-600 dark:text-gray-400">Building responsive web apps</p>
                                     </div>
                                 </div>
@@ -200,21 +198,8 @@ export default function About() {
                                         </svg>
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold text-sm text-gray-900 dark:text-white">Mobile App Dev</h4>
+                                        <h4 className="font-semibold text-sm text-gray-900 dark:text-white">Mobile App Development</h4>
                                         <p className="text-xs text-gray-600 dark:text-gray-400">Developing mobile apps</p>
-                                    </div>
-                                </div>
-
-                                {/* Bug Hunter */}
-                                <div className="flex items-center gap-3 p-2 bg-gray-50 dark:bg-gray-700 rounded-lg hover:scale-[1.02] transition-transform">
-                                    <div className="w-9 h-9 flex items-center justify-center rounded-lg bg-orange-100 dark:bg-sky-900/50 text-orange-500 dark:text-sky-400 flex-shrink-0">
-                                        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                    </div>
-                                    <div>
-                                        <h4 className="font-semibold text-sm text-gray-900 dark:text-white">Bug Hunter</h4>
-                                        <p className="text-xs text-gray-600 dark:text-gray-400">Finding & fixing vulnerabilities</p>
                                     </div>
                                 </div>
                             </div>

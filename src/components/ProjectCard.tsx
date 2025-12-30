@@ -22,8 +22,10 @@ import {
     SiAdobeaudition,
     SiJetpackcompose,
     SiGooglecloud,
-    SiRedis
+    SiRedis,
+    SiGithub
 } from "react-icons/si";
+import { FiExternalLink } from "react-icons/fi";
 import { IconType } from "react-icons";
 
 interface Project {
@@ -36,7 +38,8 @@ interface Project {
     contributor: string;
     image: string;
     techStack: string[];
-    link: string;
+    githubUrl?: string;
+    demoUrl?: string;
 }
 
 const techIcons: { [key: string]: IconType } = {
@@ -73,8 +76,48 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         setIsFlipped(!isFlipped);
     };
 
-    // Check if link is valid
-    const hasValidLink = project.link && project.link !== "#" && project.link.trim() !== "";
+    // Check if links are valid
+    const hasGithub = project.githubUrl && project.githubUrl.trim() !== "";
+    const hasDemo = project.demoUrl && project.demoUrl.trim() !== "";
+
+    const renderButtons = () => {
+        if (!hasGithub && !hasDemo) {
+            return (
+                <span className="mx-auto px-5 py-1.5 border-2 border-gray-300 dark:border-gray-600 text-gray-400 dark:text-gray-500 rounded-full text-sm font-medium cursor-not-allowed">
+                    Coming Soon
+                </span>
+            );
+        }
+
+        return (
+            <div className="flex justify-center gap-3">
+                {hasGithub && (
+                    <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="flex items-center gap-2 px-4 py-1.5 border-2 border-orange-500 dark:border-sky-400 text-orange-500 dark:text-sky-400 rounded-full text-sm font-medium hover:bg-orange-500 hover:text-white dark:hover:bg-sky-400 dark:hover:text-gray-900 transition-all"
+                    >
+                        <SiGithub className="text-lg" />
+                        <span>Source</span>
+                    </a>
+                )}
+                {hasDemo && (
+                    <a
+                        href={project.demoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={(e) => e.stopPropagation()}
+                        className="flex items-center gap-2 px-4 py-1.5 border-2 border-orange-500 dark:border-sky-400 text-orange-500 dark:text-sky-400 rounded-full text-sm font-medium hover:bg-orange-500 hover:text-white dark:hover:bg-sky-400 dark:hover:text-gray-900 transition-all"
+                    >
+                        <FiExternalLink className="text-lg" />
+                        <span>Live Demo</span>
+                    </a>
+                )}
+            </div>
+        );
+    };
 
     return (
         <div
@@ -126,22 +169,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                         })}
                     </div>
 
-                    {/* Navigate Button - Disabled if no link */}
-                    {hasValidLink ? (
-                        <a
-                            href={project.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            onClick={(e) => e.stopPropagation()}
-                            className="mx-auto px-5 py-1.5 border-2 border-orange-500 dark:border-sky-400 text-orange-500 dark:text-sky-400 rounded-full text-sm font-medium hover:bg-orange-500 hover:text-white dark:hover:bg-sky-400 dark:hover:text-gray-900 transition-all"
-                        >
-                            View Project
-                        </a>
-                    ) : (
-                        <span className="mx-auto px-5 py-1.5 border-2 border-gray-300 dark:border-gray-600 text-gray-400 dark:text-gray-500 rounded-full text-sm font-medium cursor-not-allowed">
-                            Coming Soon
-                        </span>
-                    )}
+                    {/* Buttons */}
+                    {renderButtons()}
                 </div>
 
                 {/* Back of Card */}
@@ -193,22 +222,8 @@ export default function ProjectCard({ project }: ProjectCardProps) {
                         })}
                     </div>
 
-                    {/* Navigate Button - Disabled if no link */}
-                    {hasValidLink ? (
-                        <a
-                            href={project.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            onClick={(e) => e.stopPropagation()}
-                            className="mx-auto px-5 py-1.5 border-2 border-orange-500 dark:border-sky-400 text-orange-500 dark:text-sky-400 rounded-full text-sm font-medium hover:bg-orange-500 hover:text-white dark:hover:bg-sky-400 dark:hover:text-gray-900 transition-all"
-                        >
-                            View Project
-                        </a>
-                    ) : (
-                        <span className="mx-auto px-5 py-1.5 border-2 border-gray-300 dark:border-gray-600 text-gray-400 dark:text-gray-500 rounded-full text-sm font-medium cursor-not-allowed">
-                            Coming Soon
-                        </span>
-                    )}
+                    {/* Buttons */}
+                    {renderButtons()}
                 </div>
             </div>
         </div>

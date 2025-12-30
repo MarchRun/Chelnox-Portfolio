@@ -21,11 +21,11 @@ const siteUrl = "https://chelnox.dev";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "CHELNOX | Marchel Karuna Kwee - Web Developer Portfolio",
+    default: "CHELNOX | Marchel Karuna Kwee - Web Portfolio",
     template: "%s | CHELNOX",
   },
   description:
-    "Hi, I'm Marchel Karuna Kwee (CHELNOX) - a passionate web developer crafting beautiful and functional digital experiences. Specializing in React, Next.js, Go, and modern web technologies.",
+    "My name is Marchel Karuna Kwee. My journey in technology began with a deep curiosity about how software is crafted to solve real-world problems. That curiosity has since evolved into a professional dedication to Software Development. I am focused on building robust, efficient, and user-centric software solutions, with a strong passion for continuously exploring the broad spectrum of technologies within the industry.",
   keywords: [
     "web developer",
     "portfolio",
@@ -59,9 +59,9 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     siteName: "CHELNOX",
-    title: "CHELNOX | Marchel Karuna Kwee - Web Developer",
+    title: "CHELNOX | Marchel Karuna Kwee - Software Developer",
     description:
-      "Hi, I'm Marchel Karuna Kwee (CHELNOX) - a passionate web developer crafting beautiful and functional digital experiences.",
+      "My name is Marchel Karuna Kwee. My journey in technology began with a deep curiosity about how software is crafted to solve real-world problems. That curiosity has since evolved into a professional dedication to Software Development. I am focused on building robust, efficient, and user-centric software solutions, with a strong passion for continuously exploring the broad spectrum of technologies within the industry.",
     images: [
       {
         url: "/og-image.png",
@@ -75,13 +75,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "CHELNOX | Marchel Karuna Kwee - Web Developer",
     description:
-      "Hi, I'm Marchel Karuna Kwee (CHELNOX) - a passionate web developer crafting beautiful and functional digital experiences.",
+      "My name is Marchel Karuna Kwee. My journey in technology began with a deep curiosity about how software is crafted to solve real-world problems. That curiosity has since evolved into a professional dedication to Software Development. I am focused on building robust, efficient, and user-centric software solutions, with a strong passion for continuously exploring the broad spectrum of technologies within the industry.",
     images: ["/og-image.png"],
     creator: "@chelnox",
   },
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon-16x16.png",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
     apple: "/apple-touch-icon.png",
   },
   manifest: "/site.webmanifest",
@@ -93,7 +93,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth dark">
+    <html lang="en" className="scroll-smooth">
       <head>
         <link rel="canonical" href={siteUrl} />
         <meta name="theme-color" content="#0ea5e9" />

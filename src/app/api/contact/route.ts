@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+
 
 // Simple email validation regex
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -9,6 +9,8 @@ const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 export async function POST(request: Request) {
     try {
         const { fullName, email, message } = await request.json();
+
+        const resend = new Resend(process.env.RESEND_API_KEY);
 
         // Input validation
         if (!fullName || !email || !message) {

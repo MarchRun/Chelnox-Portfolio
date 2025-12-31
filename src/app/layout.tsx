@@ -16,7 +16,7 @@ const poppins = Poppins({
   weight: ["400", "500", "600", "700", "800", "900"],
 });
 
-const siteUrl = "https://chelnox.dev";
+const siteUrl = "https://chelnox-portfolio.vercel.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

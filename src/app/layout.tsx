@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -103,6 +104,7 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
         <ThemeToggle />
+        <Analytics />
       </body>
     </html>
   );

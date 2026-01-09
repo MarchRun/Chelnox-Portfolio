@@ -15,11 +15,19 @@ const FloatingBubbles = dynamic(() => import("./FloatingBubbles"), {
     ssr: false,
 });
 
-// Calculate age dynamically
+// Calculate age dynamically based on birth date: December 22, 2004
 const calculateAge = () => {
-    const birthYear = 2003;
+    const birthDate = new Date(2004, 11, 22); // Month is 0-indexed, so 11 = December
     const today = new Date();
-    return today.getFullYear() - birthYear;
+    let age = today.getFullYear() - birthDate.getFullYear();
+    const monthDiff = today.getMonth() - birthDate.getMonth();
+
+    // If birthday hasn't occurred yet this year, subtract 1
+    if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
+    }
+
+    return age;
 };
 
 // Typing phrases

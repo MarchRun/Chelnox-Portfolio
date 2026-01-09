@@ -64,7 +64,7 @@ export default function Navbar() {
               CHELNOX
             </Link>
             <span className={`text-xs font-semibold text-orange-400 dark:text-sky-300 transition-all duration-500 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"}`}>
-              Ver 1.2
+              Ver 1.3
             </span>
           </div>
 

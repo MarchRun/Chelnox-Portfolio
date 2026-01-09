@@ -6,12 +6,10 @@
         "SiJavascript",
         "SiReact",
         "SiNextdotjs",
-        "SiTailwindcss",
-        "SiBootstrap"
+        "SiTailwindcss"
     ],
     "backend": [
         "SiCplusplus",
-        "SiGo",
         "SiPython",
         "SiKotlin",
         "SiPhp",
@@ -22,7 +20,6 @@
         "SiSupabase"
     ],
     "tools": [
-        "SiGit",
         "SiDocker",
         "SiFigma"
     ]

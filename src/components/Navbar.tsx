@@ -40,7 +40,7 @@ export default function Navbar() {
     { name: "ABOUT", href: "#about" },
     { name: "PROJECTS", href: "#projects" },
     { name: "CONTACT", href: "#contact" },
-    { name: "LOGIN", href: "http://localhost:3000", external: true },
+    { name: "LOGIN", href: "https://chelnox-sso.vercel.app", external: true },
   ];
 
   // Use transparent header for Hero and Projects sections

@@ -40,6 +40,7 @@ export default function Navbar() {
     { name: "ABOUT", href: "#about" },
     { name: "PROJECTS", href: "#projects" },
     { name: "CONTACT", href: "#contact" },
+    { name: "LOGIN", href: "http://localhost:3000", external: true },
   ];
 
   // Use transparent header for Hero and Projects sections
@@ -64,7 +65,7 @@ export default function Navbar() {
               CHELNOX
             </Link>
             <span className={`text-xs font-semibold text-orange-400 dark:text-sky-300 transition-all duration-500 ${isLoaded ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4"}`}>
-              Ver 1.3
+              Ver 1.4
             </span>
           </div>
 
@@ -74,6 +75,8 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
+                target={(link as any).external ? "_blank" : undefined}
+                rel={(link as any).external ? "noopener noreferrer" : undefined}
                 className={`text-base font-semibold transition-all duration-500 ${currentSection === link.href.replace("#", "")
                   ? "text-gray-900 dark:text-white"
                   : "text-orange-500 dark:text-sky-400 hover:text-gray-900 dark:hover:text-white"
@@ -127,6 +130,8 @@ export default function Navbar() {
               <Link
                 key={link.name}
                 href={link.href}
+                target={(link as any).external ? "_blank" : undefined}
+                rel={(link as any).external ? "noopener noreferrer" : undefined}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={`block px-6 py-3 text-lg font-semibold transition-all duration-300 ${currentSection === link.href.replace("#", "")
                   ? "text-gray-900 dark:text-white bg-orange-50 dark:bg-sky-900/30"
